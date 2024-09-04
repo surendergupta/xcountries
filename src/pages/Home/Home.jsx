@@ -12,10 +12,10 @@ const Home =  () => {
           if (flagsData && flagsData.status === 200) {
             setCountries(flagsData.data);
           } else {
-            console.error('Failed to fetch countries:', flagsData);
+            console.error('Error fetching data:', flagsData);
           }
         } catch (error) {
-          console.error('Error fetching countries:', error);
+          console.error('Error fetching data:', error);
         }
     }, []);
 
